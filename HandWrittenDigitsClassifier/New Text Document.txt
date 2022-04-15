@@ -1,0 +1,34 @@
+
+(base) C:\Windows\system32>activate tf_cpu
+
+(tf_cpu) C:\Windows\system32>pip show tensorflow
+Name: tensorflow
+Version: 2.7.0
+Summary: TensorFlow is an open source machine learning framework for everyone.
+Home-page: https://www.tensorflow.org/
+Author: Google Inc.
+Author-email: packages@tensorflow.org
+License: Apache 2.0
+Location: c:\programdata\anaconda3\envs\tf_cpu\lib\site-packages
+Requires: h5py, keras-preprocessing, keras, tensorflow-io-gcs-filesystem, typing-extensions, tensorflow-estimator, six, protobuf, wheel, tensorboard, libclang, wrapt, google-pasta, grpcio, opt-einsum, astunparse, flatbuffers, termcolor, numpy, absl-py, gast
+Required-by:
+
+(tf_cpu) C:\Windows\system32>cd desktop cd DeepLearning
+The system cannot find the path specified.
+
+(tf_cpu) C:\Windows\system32>cd desktop
+The system cannot find the path specified.
+
+(tf_cpu) C:\Windows\system32>cd c:\programdata\anaconda3\envs\tf_cpu\lib\site-packages
+
+(tf_cpu) c:\ProgramData\Anaconda3\envs\tf_cpu\Lib\site-packages>cd tensorboard
+
+(tf_cpu) c:\ProgramData\Anaconda3\envs\tf_cpu\Lib\site-packages\tensorboard>python main.py --logdir =desktop/DeepLearning/HandWrittenDigitsClassifier\logs
+2022-02-04 18:27:30.588554: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2022-02-04 18:27:30.589559: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2022-02-04 18:28:05.758159: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'nvcuda.dll'; dlerror: nvcuda.dll not found
+2022-02-04 18:28:06.488290: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2022-02-04 18:28:06.504890: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: DESKTOP-OE5R35B
+2022-02-04 18:28:06.506279: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: DESKTOP-OE5R35B
+Serving TensorBoard on localhost; to expose to the network, use a proxy or pass --bind_all
+TensorBoard 2.8.0 at http://localhost:6006/ (Press CTRL+C to quit)
